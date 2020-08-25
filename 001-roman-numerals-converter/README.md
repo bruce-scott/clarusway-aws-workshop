@@ -1,4 +1,4 @@
-# Project 001 : Roman Numerals Converter Application (Python Flask) deployed on AWS EC2 with Cloudformation
+# Project-001 : Roman Numerals Converter Application (Python Flask) deployed on AWS EC2 with Cloudformation
 
 ## Description
 The Roman Numerals Converter Application aims to convert the given number to the Roman numerals. The application is to be coded in Python and deployed as a web application with Flask on AWS Elastic Compute Cloud (EC2) Instance using AWS Cloudformation Service. 
@@ -90,7 +90,7 @@ Ten         Warning with "Not Valid! Please enter a number between 1 and 3999, i
 001-roman-numerals-converter (folder)
 |
 |----readme.md         # Given to the students (Definition of the project)          
-|----cf-template.yml   # To be delivered by students (Cloudformation template)
+|----cfn-template.yml  # To be delivered by students (Cloudformation template)
 |----app.py            # To be delivered by students (Python Flask Web Application)
 |----templates
         |----index.html  # Given to the students (HTML template)
@@ -98,6 +98,8 @@ Ten         Warning with "Not Valid! Please enter a number between 1 and 3999, i
 ```
 
 ## Expected Outcome
+
+![Project 001 Snapshot](project-001-snapshot.png)
 
 ### At the end of the project, following topics are to be covered;
 
