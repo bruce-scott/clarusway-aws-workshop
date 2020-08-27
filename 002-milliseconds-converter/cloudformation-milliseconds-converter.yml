@@ -36,9 +36,9 @@ Resources:
     Type: AWS::EC2::LaunchTemplate
     Properties: 
       LaunchTemplateData:
-        ImageId: ami-09d95fab7fff3776c
+        ImageId: ami-02354e95b39ca8dec
         InstanceType: t2.micro
-        KeyName: call.training
+        KeyName: testkey
         SecurityGroupIds: 
           - !GetAtt WebServerSecurityGroup.GroupId
         TagSpecifications: 
@@ -53,8 +53,7 @@ Resources:
               yum update -y
               yum install python3 -y
               pip3 install flask
-              TOKEN="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-              FOLDER="https://$TOKEN@raw.githubusercontent.com/clarusway/cw-workshop/aws/pr-002/aws/projects/002-milliseconds-converter/"
+              FOLDER="https://raw.githubusercontent.com/clarusway/cw-workshop/aws/pr-002/aws/projects/002-milliseconds-converter/"
               curl -s --create-dirs -o "/home/ec2-user/templates/index.html" -L "$FOLDER"templates/index.html
               curl -s --create-dirs -o "/home/ec2-user/templates/result.html" -L "$FOLDER"templates/result.html
               curl -s --create-dirs -o "/home/ec2-user/app.py" -L "$FOLDER"milliseconds-converter-app.py
@@ -74,12 +73,12 @@ Resources:
       SecurityGroups: 
         - !GetAtt ALBSecurityGroup.GroupId
       Subnets:
-        - subnet-c41ba589
-        - subnet-077c9758
-        - subnet-3ccd235a
-        - subnet-ed49bccc
-        - subnet-8d8dbfb3
-        - subnet-3246e63c
+        - subnet-25bc3c68
+        - subnet-32c9346d
+        - subnet-5a4bba3c
+        - subnet-9716e9b6
+        - subnet-afeaee91
+        - subnet-cda00ac3
       Type: application
   ALBListener:
     Type: AWS::ElasticLoadBalancingV2::Listener
