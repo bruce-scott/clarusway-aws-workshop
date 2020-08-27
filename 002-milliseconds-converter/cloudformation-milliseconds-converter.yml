@@ -53,7 +53,7 @@ Resources:
               yum update -y
               yum install python3 -y
               pip3 install flask
-              FOLDER="https://raw.githubusercontent.com/clarusway/cw-workshop/aws/pr-002/aws/projects/002-milliseconds-converter/"
+              FOLDER="https://https://raw.githubusercontent.com/bruce-scott/clarusway-aws-workshop/master/002-milliseconds-converter/milliseconds-converter-app.py"
               curl -s --create-dirs -o "/home/ec2-user/templates/index.html" -L "$FOLDER"templates/index.html
               curl -s --create-dirs -o "/home/ec2-user/templates/result.html" -L "$FOLDER"templates/result.html
               curl -s --create-dirs -o "/home/ec2-user/app.py" -L "$FOLDER"milliseconds-converter-app.py
